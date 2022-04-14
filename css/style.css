@@ -1,0 +1,159 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;    
+}
+button{
+    background: transparent;
+    border: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 550px;
+    background: lightgrey;
+    padding: 20px;
+}
+.input__title{
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;           
+    width: 100%;    
+    display: flex;
+}
+.input__bankname,
+.input__interestrate,
+.input__maxloan,
+.input__loan,
+.input__payment,
+.input__minpayment,
+.input__loanterm,
+.select__bank{            
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-left: auto;        
+}
+.create__btn,
+.edit__btn,
+.remove__btn,
+.open__table,
+.save__btn,
+.unsave__btn,
+.calculate__btn{
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 5px;
+    width: 130px;
+    background: lightblue;
+    border-radius: 20%;
+    border: 1px solid blue;
+    cursor: pointer;
+    margin: 10px;    
+    text-transform: uppercase;        
+    transition: background 0.5s;
+}
+.create__btn:hover,
+.open__table:hover,
+.edit__btn:hover,
+.remove__btn:hover,
+.open__table:hover,
+.save__btn:hover,
+.unsave__btn:hover,
+.calculate__btn:hover{
+    background: lightgreen;
+}
+.save__block{
+    display: none;
+    margin-left: auto;    
+}
+.save__btn,
+.unsave__btn{
+    background: lightsalmon;        
+    margin-bottom: 30px;
+}
+.btn__inner{
+    margin: 0 auto;
+}
+.open__table{
+    width: 350px;
+    margin: 0 auto;
+}
+.banks,
+.calculator{
+    padding: 20px 0;
+}
+.banks__inner{    
+    display: flex;
+    flex-direction: column;
+}
+.table{
+    border: 1px solid black;
+    width: 750px;
+}
+tr{
+    height: 40px;
+    line-height: 40px;
+    background: transparent;
+    transition: background 0.3s;
+}
+tr:hover{
+    background: lightcyan;
+    cursor: pointer;
+}
+.row__title{
+    background: lightgrey !important; 
+}
+/* tr:nth-child(odd){
+    background-color:#ffc;
+}
+tr:nth-child(even){
+    background-color:#fff;
+} */
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+.calculator__inner{
+    margin-bottom: 50px;
+    width: 500px;
+    background: lightgrey;
+    padding: 20px;
+}
+.calculator__title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.calculator__form{
+
+}
+.payment__out{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.payment__text,
+.payment__value{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;    
+    margin-right: 30px;
+    color: brown;
+}
+.payment__text{      
+    margin-right: 30px; 
+}

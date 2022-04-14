@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Banks</title>
+</head>
+<body>
+    <section class="banks">
+        <div class="container">
+            <div class="banks__inner">
+                <div class="form">                
+                    <label class="input__title">
+                        Bank name
+                        <input class="input__bankname" type="text" name = "bankName" minlength="1" autofocus>
+                    </label>                                
+                                    
+                    <label class="input__title">
+                        Interest rate, %
+                        <input class="input__interestrate" type="text" name = "interestRate" minlength="1"  >
+                    </label>                
+                    <label class="input__title">
+                        Maximum loan
+                        <input class="input__maxloan" type="text" name = "maxLoan" minlength="1" >
+                    </label>                
+                    <label class="input__title">
+                        Minimum down payment, %
+                        <input class="input__minpayment" type="text" name = "minDownPayment" minlength="1" >
+                    </label>                
+                    <label class="input__title">
+                        Loan term
+                        <input class="input__loanterm" type="text" name = "loanTerm" minlength="1" >
+                    </label>                
+
+                    <div class="save__block">
+                        <button class="save__btn">Save</button>
+                        <button class="unsave__btn">Exit</button>
+                    </div>                    
+                    <div class="btn__inner">
+                        <button class="create__btn">Create</button>
+                        <button class="edit__btn">Edit</button>                
+                        <button class="remove__btn">Remove</button>                                
+                    </div>
+                    
+                    <a class="open__table" href="index2.html" target="_blank">Mortgage calculator page</a>
+                </div>                    
+                <table class="table">
+                    <tr class="row__title">
+                        <th class="table__head">Bank name</th>
+                        <th class="table__head">Interest rate, %</th>
+                        <th class="table__head">Maximum loan</th>
+                        <th class="table__head">Minimum down payment, %</th>
+                        <th class="table__head">Loan term</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

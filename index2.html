@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mortgage calculator page</title>
+</head>
+<body>
+    <section class="calculator">
+        <div class="container">
+            <div class="calculator__inner">
+                <h1 class="calculator__title">Mortgage calculator page</h1>
+                <div class="calculator__form">
+                    <label class="input__title">
+                        Initial loan
+                        <input class="input__loan" type="text" name = "loanValue" minlength="1">
+                    </label>                                
+                    <label class="input__title">
+                        Down payment
+                        <input class="input__payment" type="text" name = "downPayment" minlength="1">
+                    </label>                                
+                    <label class="input__title">
+                        Select bank name
+                        <select class="select__bank" name="" id="" onChange="updateBank()">
+                            <!-- <option class="" value="cel" >Celsius</option>
+                            <option class="" value="far" >Farengeit</option> -->
+                        </select>                    
+                    </label>         
+                    <div class="payment__out">
+                        <p class="payment__text">Monthly mortgage payment</p>
+                        <p class="payment__value">0 $</p>
+                    </div>                       
+                    
+                    <button class="calculate__btn">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main2.js"></script>
+</body>
+</html>
